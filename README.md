@@ -28,6 +28,7 @@ void loop() {
     Serial.println("Button pressed!");
   }
 }
+```
 
 ## Author
 This library was created by ChatGPT in response to a request from tettou771. Thank you for using this library.
