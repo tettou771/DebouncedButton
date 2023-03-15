@@ -1,6 +1,6 @@
 #include <DebouncedButton.h>
 
-DebouncedButton button(D2);
+DebouncedButton button(2);
 
 void setup() {
   Serial.begin(9600);
@@ -11,4 +11,3 @@ void loop() {
     Serial.println("Button pressed!");
   }
 }
-

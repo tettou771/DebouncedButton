@@ -5,7 +5,7 @@
 
 class DebouncedButton {
   public:
-    DebouncedButton(uint8_t pin);
+    DebouncedButton(uint8_t pin, uint16_t debounceDelay = 50);
     bool read();
   private:
     uint8_t _pin;

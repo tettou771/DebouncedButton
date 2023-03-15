@@ -3,8 +3,8 @@
 #define BUTTON_COUNT 2
 
 DebouncedButton buttons[BUTTON_COUNT] = {
-  DebouncedButton(D10),
-  DebouncedButton(D11)
+  DebouncedButton(10),
+  DebouncedButton(11)
 };
 
 void setup() {
@@ -20,4 +20,3 @@ void loop() {
     }
   }
 }
-
