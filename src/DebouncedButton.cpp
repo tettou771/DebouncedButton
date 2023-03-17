@@ -13,14 +13,11 @@ bool DebouncedButton::read()
 {
   bool buttonState = digitalRead(_pin);
   if (buttonState != _lastButtonState) {
-    _lastDebounceTime = millis();
-  }
-  if ((millis() - _lastDebounceTime) > _debounceDelay) {
-    if (buttonState != _lastButtonState) {
+    if ((millis() - _lastDebounceTime) > _debounceDelay) {
+      _lastDebounceTime = millis();
       _lastButtonState = buttonState;
       return _lastButtonState == LOW;
     }
   }
   return false;
 }
-
